@@ -14,6 +14,12 @@ const TEAM = [
     emoji: "👨‍💻",
     city: "Jaipur"
   },
+  {
+    name: "Aman Maheshwari",
+    role: "Full Stack Developer",
+    emoji: "👨‍💻",
+    city: "Jaipur"
+  },
 ];
 
 const STATS = [
