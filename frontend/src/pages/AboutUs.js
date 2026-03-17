@@ -2,17 +2,24 @@ import React from "react";
 import Navbar from "../components/Navbar";
 
 const TEAM = [
-  { name: "Ravi Sharma",   role: "Founder & CEO",       emoji: "👨‍💼", city: "Mumbai"    },
-  { name: "Priya Singh",   role: "Head of Operations",  emoji: "👩‍💼", city: "Delhi"     },
-  { name: "Amit Verma",    role: "Lead Developer",      emoji: "👨‍💻", city: "Bangalore" },
-  { name: "Sneha Patel",   role: "Marketing Manager",   emoji: "👩‍🎨", city: "Jaipur"   },
+  {
+    name: "Kartik Sharma",
+    role: "Full Stack Developer",
+    emoji: "👨‍💻",
+    city: "Jaipur"
+  },
+  {
+    name: "Jitendra Swami",
+    role: "Full Stack Developer",
+    emoji: "👨‍💻",
+    city: "Jaipur"
+  },
 ];
 
 const STATS = [
-  { value: "10,000+", label: "Properties Listed" },
-  { value: "50,000+", label: "Happy Tenants"     },
-  { value: "25+",     label: "Cities Covered"    },
-  { value: "5 Years", label: "of Trust"          },
+  { value: "1000+", label: "Properties Listed" },
+  { value: "200+", label: "Happy Tenants"     },
+  { value: "9+",     label: "Cities Covered"    },
 ];
 
 function AboutUs() {
@@ -43,10 +50,10 @@ function AboutUs() {
           <div style={{ animation: "slideInLeft 0.7s ease" }}>
             <h2 className="section-title">Our Mission</h2>
             <p style={{ color: "#555", lineHeight: 1.8, fontSize: "1rem", marginBottom: "16px" }}>
-              We believe finding a rental home should be simple, transparent, and stress-free. Our platform connects thousands of property owners with verified tenants across India.
+              We believe finding a rental home should be simple, transparent, and stress-free. Our platform directly connects property owners with verified tenants across India — completely eliminating brokers and middlemen from the process.
             </p>
             <p style={{ color: "#555", lineHeight: 1.8, fontSize: "1rem" }}>
-              From a humble apartment in Mumbai to luxury villas in Goa — we list it all. Every property is verified for safety, accuracy, and quality before going live.
+              No broker fees. No hidden charges. No middlemen. Just honest, fair rental prices directly from owners to tenants. We empower both owners and tenants to connect directly, saving thousands of rupees in brokerage every year.
             </p>
           </div>
           <div style={{ animation: "slideInRight 0.7s ease" }}>
@@ -94,9 +101,21 @@ function AboutUs() {
         <h2 className="section-title" style={{ marginBottom: "24px" }}>Our Values</h2>
         <div className="features-grid" style={{ marginBottom: "60px" }}>
           {[
-            { icon: "🤝", title: "Trust First",       desc: "Every listing is manually verified before publishing" },
-            { icon: "💡", title: "Innovation",        desc: "Constantly improving to give you the best experience" },
-            { icon: "❤️", title: "Customer Focus",    desc: "Your satisfaction is our top priority, always"        },
+            {
+              icon: "🤝",
+              title: "No Broker, No Fees",
+              desc: "Direct owner-to-tenant connection — zero brokerage, zero hidden charges"
+            },
+            {
+              icon: "💡",
+              title: "Fair & Transparent",
+              desc: "Real prices, honest listings — what you see is what you pay"
+            },
+            {
+              icon: "❤️",
+              title: "Tenant First",
+              desc: "We exist to make renting affordable and stress-free for everyone"
+            },
           ].map((v) => (
             <div key={v.title} className="feature-card">
               <div className="feature-icon">{v.icon}</div>
